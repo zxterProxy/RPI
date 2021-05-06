@@ -1,0 +1,11 @@
+[{
+  "modid": "rpi",
+  "name": "Role-playing-items",
+  "description": "Мод на предметы для атмосферного отыгрыша !",
+  "version": "0.9.4",
+  "mcversion": "1.7.0",
+  "url": "https://vk.com/ariamisrp",
+  "logoFile" : "assets/rpi/textures/gui/logo.png",
+  "authorList": [zxterProxy],
+  "credits": "Спасибо моей маме, Еву ну и конечно моей любимой девушке Хороми"
+}]

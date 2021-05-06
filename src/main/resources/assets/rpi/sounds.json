@@ -1,0 +1,30 @@
+{
+    "ambient.test": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "test",
+                "stream": true
+            }
+        ]
+    },
+	"block.fog":{
+        "category": "block",
+        "sounds":
+        [
+            {
+                "name": "fog"
+            }
+        ]
+    },
+	"ambient.fog_2": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "fog_2",
+                "stream": true
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,158 @@
+//Мобы
+entity.savage.name=Дикарь
+//Блоки
+tile.cobblestoneclay.name=Глинястый булижник
+tile.monolith.name=Монолит
+//Блок_укрепление
+tile.strengthening.0.name=Имперский кирпич
+tile.strengthening.1.name=Иргадский кирпич
+tile.strengthening.2.name=Генейзенский кирич
+tile.strengthening.3.name=Булыжникокирпичная кладка
+//Блок_черепица
+tile.roofk.0.name=Кадельская пластинчатая черепица
+tile.roofk.1.name=Кадельская листовая черепица
+tile.roofk.2.name=Кадельская чешуйчатая черепица
+//Блок_листовая черепица
+tile.roof2.0.name=Черная листовая черепица
+tile.roof2.1.name=Синяя листовая черепица
+tile.roof2.2.name=Коричневая листовая черепица
+tile.roof2.3.name=Бирюзовая листовая черепица
+tile.roof2.4.name=Серая листовая черепица
+tile.roof2.5.name=Зеленая листовая черепица
+tile.roof2.6.name=Голубая листовая черепица
+tile.roof2.7.name=Лаймовая листовая черепица
+tile.roof2.8.name=Пурпурная листовая черепица
+tile.roof2.9.name=Ораньжевая листовая черепица
+tile.roof2.10.name=Розовая листовая черепица
+tile.roof2.11.name=Фиолетовая листовая черепица
+tile.roof2.12.name=Красная листовая черепица
+tile.roof2.13.name=Светло-серая листовая черепица
+tile.roof2.14.name=Белая листовая черепица
+tile.roof2.15.name=Желтая листовая черепица
+tile.roof2.16.name=Кадельская листовая черепица
+//Блок_пластинчатая черепица
+tile.roof1.0.name=Черная пластинчатая черепица
+tile.roof1.1.name=Синяя пластинчатая черепица
+tile.roof1.2.name=Коричневая пластинчатая черепица
+tile.roof1.3.name=Бирюзовая пластинчатая черепица
+tile.roof1.4.name=Серая пластинчатая черепица
+tile.roof1.5.name=Зеленая пластинчатая черепица
+tile.roof1.6.name=Голубая пластинчатая черепица
+tile.roof1.7.name=Лаймовая пластинчатая черепица
+tile.roof1.8.name=Пурпурная пластинчатая черепица
+tile.roof1.9.name=Ораньжевая пластинчатая черепица
+tile.roof1.10.name=Розовая пластинчатая черепица
+tile.roof1.11.name=Фиолетовая пластинчатая черепица
+tile.roof1.12.name=Красная пластинчатая черепица
+tile.roof1.13.name=Светло-серая пластинчатая черепица
+tile.roof1.14.name=Белая пластинчатая черепица
+tile.roof1.15.name=Желтая пластинчатая черепица
+tile.roof1.16.name=Кадельская пластинчатая черепица
+//Блок_чешуйчатая черепица
+tile.roof3.0.name=Черная чешуйчатая черепица
+tile.roof3.1.name=Синяя чешуйчатая черепица
+tile.roof3.2.name=Коричневая чешуйчатая черепица
+tile.roof3.3.name=Бирюзовая чешуйчатая черепица
+tile.roof3.4.name=Серая чешуйчатая черепица
+tile.roof3.5.name=Зеленая чешуйчатая черепица
+tile.roof3.6.name=Голубая чешуйчатая черепица
+tile.roof3.7.name=Лаймовая чешуйчатая черепица
+tile.roof3.8.name=Пурпурная чешуйчатая черепица
+tile.roof3.9.name=Ораньжевая чешуйчатая черепица
+tile.roof3.10.name=Розовая чешуйчатая черепица
+tile.roof3.11.name=Фиолетовая чешуйчатая черепица
+tile.roof3.12.name=Красная чешуйчатая черепица
+tile.roof3.13.name=Светло-серая чешуйчатая черепица
+tile.roof3.14.name=Белая чешуйчатая черепица
+tile.roof3.15.name=Желтая чешуйчатая черепица
+tile.roof3.16.name=Кадельская чешуйчатая черепица
+//Обычные предметы
+item.scroll.name=Свиток
+item.sealedenvelope.name=Конверт с печатью
+item.letter.name=Письмо
+item.diary.name=Дневник
+//Ингредиенты
+item.resin.name=Смола
+item.wismar.name=Толченый висомор
+item.ironwheel.name=Стальное колесо
+//Падший рыцарь
+item.eliteknighthelmet.name=Шлем падшего рыцаря
+item.eliteknightplate.name=Кирасса падшего рыцаря
+item.eliteknightpants.name=Поножи падшего рыцаря
+item.eliteknightboots.name=Ботинки падшего рыцаря
+//Наёмник
+item.mercenaryhelmet.name=Шлем наемника
+item.mercenaryplate.name=Кирасса наемника
+item.mercenarypants.name=Поножи наемника
+item.mercenaryboots.name=Ботинки наемника
+//Странник
+item.wandererhelmet.name=Капюшон странника
+item.wandererplate.name=Куртка странника
+item.wandererpants.name=Поножи странника
+item.wandererboots.name=Ботинки странника
+//Волшебник
+item.wizardhelmet.name=Шапка волшебника
+item.wizardplate.name=Мантия волшебника
+item.wizardpants.name=Поножи волшебника
+item.wizardboots.name=Ботинки волшебника
+//Пиромант
+item.pyromancerhelmet.name=Капюшон пироманта
+item.pyromancerplate.name=Трепье пироманта
+item.pyromancerpants.name=Поножи пироманта
+item.pyromancerboots.name=Ботинки пироманта
+//Клирик
+item.clerichelmet.name=Шлем солнечного взора 
+item.clericplate.name=Роба клирика
+item.clericpants.name=Поножи клирика
+item.clericboots.name=Ботинки клирика
+//Пилигрим тьмы
+item.pilgrimhelmet.name=Шлем лунного света
+item.pilgrimplate.name=Роба пилигрима тьмы
+item.pilgrimpants.name=Поножи пилигрима тьмы
+item.pilgrimboots.name=Ботинки пилигрима тьмы
+//Eда
+item.crescentgrass.name=Трава полумесяца
+//Оружие
+item.rustytwohandedsword.name=Ржавый двуручный меч
+item.brokenstraightsword.name=Сломанный прямой меч
+item.ruineddagger.name=Испорченый кинжал
+item.bluntedrapier.name=Затупленная рапира
+item.brokenlittlecrossbow.name=Арбалет
+item.therustyaxe.name=Ржавый топор
+item.brokenshestoper.name=Сломанный шестопер
+item.mizerickord.name=Мизерикордия порочного милосердия
+//Кольца
+item.ringwithgreenstone.name=Кольцо с зелёным камнем
+item.ringwithredstone.name=Кольцо с красным камнем
+item.cristalring.name=Кристальное кольцо
+item.ringprincessofthesun.name=Кольцо принцессы солнца
+//Снаряжение
+item.oldmedallionofthemercenary.name=Старый медальен наёмника
+item.brokenwizardswand.name=Сломанный жезл волшебника
+item.theflameofthepyromancer.name=Пламя пироманта
+item.rustypickaxe.name=Ржавая кирка
+item.talkingsphere.name=Говорящая сфера
+item.thebellofthecleric.name=Колокольчик клирика
+item.ifritsskull.name=Череп ифрита
+item.distortedholyscripture.name=Испорченный фрагмент священного писания
+//Таблица
+itemGroup.rpi=Предметы для отыгрыша
+//Фразы Сферы
+message.rpi.message_0=Дружок пирожок
+message.rpi.message_1=Не три так сильно
+message.rpi.message_2=Мейби секс?
+message.rpi.message_3=Какой ты сильный! ВАУ!
+//Мизерикордия порочного милосердия
+lore.rpi.mizerickord.0=§4Когда-то этот кинжал принадлежал Андрилу
+lore.rpi.mizerickord.1=§4одному из лидеров Лесного Торгового Аванпоста
+lore.rpi.mizerickord.2=§4но потом он пал от рук одного сектанта
+lore.rpi.mizerickord.3=§4и был прирезан собственным мизерикордом
+//Кольцо принцессы Солнца
+lore.rpi.ringprincessofthesun.0=Это кольцо связывает с Гвиневер, принцессой Солнца,
+lore.rpi.ringprincessofthesun.1=старшей дочерью первого повелителя Гвина.
+lore.rpi.ringprincessofthesun.2=Кольцо неуловимо теплое на ощупь, словно луч света.
+lore.rpi.ringprincessofthesun.3=
+//Книга исследований
+knowledge.scroll_info=Хорос
+knowledge.scroll_info.desc=бутербродос
+knowledge.mmm.1=Хоро любит бутерброды, а я Хоро
