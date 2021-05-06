@@ -29,7 +29,6 @@ public class Scroll extends Item {
         setTextureName(main.MODID + ":" + texture);
         setCreativeTab(CommonProxy.mytab);
         setMaxDamage(100);
-
     }
 
 }

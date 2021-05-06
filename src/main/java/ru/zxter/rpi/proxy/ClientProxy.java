@@ -4,10 +4,11 @@ import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import minefantasy.mf2.client.KnowledgePageRegistry;
 import net.minecraft.client.model.ModelBiped;
+import ru.zxter.rpi.MFintegration.RPIInformationList;
+import ru.zxter.rpi.MFintegration.RPIKnowledgeList;
+import ru.zxter.rpi.MFintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
-import ru.zxter.rpi.register.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.render.RenderSavage;
 
 public class ClientProxy extends CommonProxy {
