@@ -9,7 +9,6 @@ import ru.zxter.rpi.BossTab;
 import ru.zxter.rpi.Events.RPIEventHandler;
 import ru.zxter.rpi.MFintegration.RPIInformationList;
 import ru.zxter.rpi.MFintegration.RPIKnowledgeList;
-import ru.zxter.rpi.MFintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.MyTab;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.mobs.Savage;

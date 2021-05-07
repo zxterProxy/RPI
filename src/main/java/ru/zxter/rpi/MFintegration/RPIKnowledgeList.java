@@ -10,7 +10,7 @@ import ru.zxter.rpi.register.ItemReg;
  * Created by zxter on 06.05.2021.
  * Тут идет регистрация иконок изучений для "книги исследований"
  */
-public class RPIKnowledgeList extends KnowledgeListMF {
+public class RPIKnowledgeList{
 
     public static InformationBase test;
     public static InformationPage relics = RPIInformationList.relics;
