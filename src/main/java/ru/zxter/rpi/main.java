@@ -6,13 +6,9 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import net.minecraft.entity.EnumCreatureType;
 import net.minecraftforge.common.MinecraftForge;
-import ru.zxter.rpi.Events.RPIEventHandler;
-import ru.zxter.rpi.mobs.Savage;
+import ru.zxter.rpi.events.RPIEventHandler;
 import ru.zxter.rpi.proxy.CommonProxy;
-import scala.tools.nsc.doc.model.Entity$class;
 
 
 @Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION)

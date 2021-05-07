@@ -2,7 +2,7 @@ package ru.zxter.rpi.render;
 
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
-import ru.zxter.rpi.Utility.Gif;
+import ru.zxter.rpi.utility.Gif;
 import ru.zxter.rpi.main;
 
 /**

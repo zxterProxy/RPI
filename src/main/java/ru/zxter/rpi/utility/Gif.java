@@ -1,4 +1,4 @@
-package ru.zxter.rpi.Utility;
+package ru.zxter.rpi.utility;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
@@ -8,7 +8,6 @@ import net.minecraft.util.ResourceLocation;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

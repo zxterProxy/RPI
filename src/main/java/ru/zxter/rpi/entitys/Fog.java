@@ -1,4 +1,4 @@
-package ru.zxter.rpi.Entitys;
+package ru.zxter.rpi.entitys;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;

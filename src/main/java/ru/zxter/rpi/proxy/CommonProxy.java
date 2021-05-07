@@ -6,7 +6,6 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.MinecraftForgeClient;
 import ru.zxter.rpi.BossTab;
-import ru.zxter.rpi.Events.RPIEventHandler;
 import ru.zxter.rpi.MFintegration.RPIInformationList;
 import ru.zxter.rpi.MFintegration.RPIKnowledgeList;
 import ru.zxter.rpi.MyTab;
@@ -48,7 +47,10 @@ public class CommonProxy {
         MinecraftForgeClient.registerItemRenderer(WeaponReg.spikekeule, new KeuleRender(2));
         //RPIInformationList
         RPIInformationList.init();
+        //RPIKnowledgeList
         RPIKnowledgeList.RPIKnowledgeListReg();
+
+
     }
 
     public void init(FMLInitializationEvent event) {
@@ -57,8 +59,7 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent event) {
-
-
+        ;
     }
 
     public void registerRenderers()

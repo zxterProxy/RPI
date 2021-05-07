@@ -13,7 +13,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
-import ru.zxter.rpi.Entitys.Fog;
+import ru.zxter.rpi.entitys.Fog;
 import ru.zxter.rpi.main;
 
 
