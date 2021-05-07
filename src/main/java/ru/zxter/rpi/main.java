@@ -10,6 +10,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraftforge.common.MinecraftForge;
 import ru.zxter.rpi.Events.RPIEventHandler;
+import ru.zxter.rpi.MFintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.proxy.CommonProxy;
 import scala.tools.nsc.doc.model.Entity$class;
@@ -34,7 +35,6 @@ public class main {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-
     }
 
 

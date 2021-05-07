@@ -9,8 +9,8 @@ import ru.zxter.rpi.BossTab;
 import ru.zxter.rpi.Events.RPIEventHandler;
 import ru.zxter.rpi.MFintegration.RPIInformationList;
 import ru.zxter.rpi.MFintegration.RPIKnowledgeList;
+import ru.zxter.rpi.MFintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.MyTab;
-import ru.zxter.rpi.Recipe.RPIRecipe;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.register.*;
@@ -47,17 +47,14 @@ public class CommonProxy {
         MinecraftForgeClient.registerItemRenderer(WeaponReg.flamberg, new FlambergRender(3));
         MinecraftForgeClient.registerItemRenderer(WeaponReg.keule, new KeuleRender(2));
         MinecraftForgeClient.registerItemRenderer(WeaponReg.spikekeule, new KeuleRender(2));
-
+        //RPIInformationList
+        RPIInformationList.init();
+        RPIKnowledgeList.RPIKnowledgeListReg();
     }
 
     public void init(FMLInitializationEvent event) {
         //SpawnMobs
         MobSpawnReg.MobSpawnReg();
-        //RPIInformationList
-        RPIInformationList.init();
-        RPIKnowledgeList.RPIKnowledgeListReg();
-        //RPIRecipe
-        RPIRecipe.Recipe();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
