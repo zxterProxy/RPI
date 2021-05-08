@@ -1,7 +1,8 @@
-package ru.zxter.rpi;
+package ru.zxter.rpi.ctabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import ru.zxter.rpi.main;
 import ru.zxter.rpi.register.LoreItemsReg;
 import ru.zxter.rpi.register.WeaponReg;
 

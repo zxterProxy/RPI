@@ -5,7 +5,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.model.ModelBiped;
-import ru.zxter.rpi.MFintegration.RPIKnowledgePageRegistry;
+import ru.zxter.rpi.mfintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.render.RenderSavage;
 

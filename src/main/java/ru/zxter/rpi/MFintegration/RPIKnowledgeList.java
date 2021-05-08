@@ -1,9 +1,8 @@
-package ru.zxter.rpi.MFintegration;
+package ru.zxter.rpi.mfintegration;
 
 import minefantasy.mf2.api.knowledge.InformationBase;
 import minefantasy.mf2.api.knowledge.InformationPage;
 import minefantasy.mf2.api.rpg.SkillList;
-import minefantasy.mf2.knowledge.KnowledgeListMF;
 import ru.zxter.rpi.register.ItemReg;
 
 /**

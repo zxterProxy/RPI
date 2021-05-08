@@ -5,10 +5,10 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.MinecraftForgeClient;
-import ru.zxter.rpi.BossTab;
-import ru.zxter.rpi.MFintegration.RPIInformationList;
-import ru.zxter.rpi.MFintegration.RPIKnowledgeList;
-import ru.zxter.rpi.MyTab;
+import ru.zxter.rpi.ctabs.BossTab;
+import ru.zxter.rpi.mfintegration.RPIInformationList;
+import ru.zxter.rpi.mfintegration.RPIKnowledgeList;
+import ru.zxter.rpi.ctabs.MyTab;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.register.*;
@@ -45,10 +45,6 @@ public class CommonProxy {
         MinecraftForgeClient.registerItemRenderer(WeaponReg.flamberg, new FlambergRender(3));
         MinecraftForgeClient.registerItemRenderer(WeaponReg.keule, new KeuleRender(2));
         MinecraftForgeClient.registerItemRenderer(WeaponReg.spikekeule, new KeuleRender(2));
-        //RPIInformationList
-        RPIInformationList.init();
-        //RPIKnowledgeList
-        RPIKnowledgeList.RPIKnowledgeListReg();
 
 
     }
@@ -59,7 +55,11 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent event) {
-        ;
+        //RPIInformationList
+        RPIInformationList.init();
+        //RPIKnowledgeList
+        RPIKnowledgeList.RPIKnowledgeListReg();
+
     }
 
     public void registerRenderers()

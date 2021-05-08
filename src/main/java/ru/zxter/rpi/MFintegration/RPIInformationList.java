@@ -1,6 +1,5 @@
-package ru.zxter.rpi.MFintegration;
+package ru.zxter.rpi.mfintegration;
 
-import minefantasy.mf2.api.knowledge.InformationList;
 import minefantasy.mf2.api.knowledge.InformationPage;
 
 /**

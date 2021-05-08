@@ -11,7 +11,7 @@ import ru.zxter.rpi.events.RPIEventHandler;
 import ru.zxter.rpi.proxy.CommonProxy;
 
 
-@Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION)
+@Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION, dependencies = "required-after:minefantasy2@")
 public class main {
 
     public static final String MODID = "rpi";
