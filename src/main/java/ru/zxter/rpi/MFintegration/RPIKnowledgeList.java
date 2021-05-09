@@ -5,6 +5,9 @@ import minefantasy.mf2.api.crafting.anvil.IAnvilRecipe;
 import minefantasy.mf2.api.crafting.carpenter.ICarpenterRecipe;
 import minefantasy.mf2.api.knowledge.InformationBase;
 import minefantasy.mf2.api.knowledge.InformationPage;
+import minefantasy.mf2.api.refine.Alloy;
+import minefantasy.mf2.api.refine.AlloyRecipes;
+import minefantasy.mf2.api.refine.BlastFurnaceRecipes;
 import minefantasy.mf2.api.rpg.SkillList;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -26,6 +29,7 @@ public class RPIKnowledgeList{
     public static IRecipe talkingsphereR;
     public static ICarpenterRecipe talkingsphereCR;
     public static IAnvilRecipe talkingsphereAR;
+    public static BlastFurnaceRecipes talkingsphereMMM;
    // public static
     public static InformationBase talkingsphere;
     public static InformationPage relics = RPIInformationList.relics;
