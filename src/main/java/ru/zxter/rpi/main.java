@@ -6,9 +6,12 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import minefantasy.mf2.api.armour.ArmourDesign;
+import minefantasy.mf2.api.armour.CustomArmourEntry;
 import net.minecraftforge.common.MinecraftForge;
 import ru.zxter.rpi.events.RPIEventHandler;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.ArmorReg;
 
 
 @Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION, dependencies = "required-after:minefantasy2@")
@@ -36,6 +39,7 @@ public class main {
         System.out.println("\u001B[32m" + "[RPI PRE-INITIALIZATION]" + "\u001B[0m");
         proxy.preInit(event);
         proxy.registerRenderers();
+
     }
     /** ИЦАЛИЗАЦИЯ
      *

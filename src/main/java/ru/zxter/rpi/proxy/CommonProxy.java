@@ -3,6 +3,8 @@ package ru.zxter.rpi.proxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import minefantasy.mf2.api.armour.ArmourDesign;
+import minefantasy.mf2.api.armour.CustomArmourEntry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.MinecraftForgeClient;
 import ru.zxter.rpi.ctabs.BossTab;
@@ -62,12 +64,16 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent event) {
+
+
         //RPIKnowledgeList
         RPIKnowledgeList.RPIKnowledgeListReg();
         //RPIInformationList
         RPIInformationList.init();
-        //Крфты
+        //MF+RPI Крафты
         RPIRecipe.init();
+        //Статисика брони
+        ArmorReg.ArmorStatsReg();
     }
 
     public void registerRenderers()

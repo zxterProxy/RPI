@@ -1,5 +1,8 @@
 package ru.zxter.rpi.register;
 
+import minefantasy.mf2.api.armour.ArmourDesign;
+import minefantasy.mf2.api.armour.CustomArmourEntry;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
@@ -72,6 +75,8 @@ public class ArmorReg {
         pilgrimplate = new PilgrimArmor(thematerialofthecleric, 0, 1, "pilgrimrobes", "pilgrimrobes").setTextureName(MODID + ":" + "pilgrimrobes");
         pilgrimpants = new PilgrimArmor(thematerialofthecleric, 0, 2, "pilgrimskirt", "pilgrimskirt").setTextureName(MODID + ":" + "pilgrimskirt");
         pilgrimboots = new PilgrimArmor(thematerialofthecleric, 0, 3, "pilgrimshackles", "pilgrimshackles").setTextureName(MODID + ":" + "pilgrimshackles");
-
+    }
+    public static void ArmorStatsReg() {
+        CustomArmourEntry.registerItem(ArmorReg.clerichelmet, ArmourDesign.CHAINMAIL, 100.5F, "medium");
     }
 }
