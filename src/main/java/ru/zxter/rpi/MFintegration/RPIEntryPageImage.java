@@ -9,7 +9,7 @@ import net.minecraft.util.StatCollector;
 import ru.zxter.rpi.RPITextureHelper;
 
 /**
- * Created by zxter on 08.05.2021.
+ * Бог копипаста переписал класс страниц, дабы коректно рисовать текстуры в "книге исследований"
  */
 public class RPIEntryPageImage extends EntryPage {
     private Minecraft mc = Minecraft.getMinecraft();

@@ -7,36 +7,31 @@
          by: Searge, ProfMobius, Fesh0r,         
          R4wk, ZeuX, IngisKahn, bspkrs           
 #################################################
-:compileApiJava UP-TO-DATE
-:processApiResources UP-TO-DATE
-:apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-C:\Users\zxter\Desktop\SORS\RPI\build\sources\java\ru\zxter\rpi\loreitems\items\Scroll.java:14: warning: gif is internal proprietary API and may be removed in a future release
-import sun.net.www.content.image.gif;
-                                ^
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-2 warnings
-
-:processResources
-:classes
-:jar
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:extractMcpData UP-TO-DATE
+:downloadClient SKIPPED
+:downloadServer SKIPPED
 :getVersionJson
 :extractUserDev UP-TO-DATE
+:mergeJars SKIPPED
+:applyBinPatches
+:downloadMcpTools SKIPPED
+:extractMcpData UP-TO-DATE
 :genSrgs SKIPPED
-:reobf
-:assemble
-:check UP-TO-DATE
-:build
+:deobfBinJar
+Applying SpecialSource...
+Applying Exceptor...
+Stripping synthetics...
+:extractNatives UP-TO-DATE
+:getAssetsIndex
+:getAssets
+:makeStart
+[ant:javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[ant:javac] 1 warning
+:setupDevWorkspace
+:ideaModule
+:ideaProject
+:ideaWorkspace
+:idea
 
 BUILD SUCCESSFUL
 
-Total time: 17.438 secs
+Total time: 26.814 secs

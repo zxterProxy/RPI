@@ -1,7 +1,7 @@
 package ru.zxter.rpi.register;
 
 import net.minecraft.item.Item;
-import ru.zxter.rpi.loreitems.TalkingSphere;
+import ru.zxter.rpi.loreitems.relics.TalkingSphere;
 import ru.zxter.rpi.loreitems.items.*;
 
 public class ItemReg {

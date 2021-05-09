@@ -11,11 +11,17 @@ import ru.zxter.rpi.mfintegration.RPIKnowledgeList;
 import ru.zxter.rpi.ctabs.MyTab;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.mobs.Savage;
+import ru.zxter.rpi.recipe.RPIRecipe;
 import ru.zxter.rpi.register.*;
 import ru.zxter.rpi.render.FlambergRender;
 import ru.zxter.rpi.render.KeuleRender;
 
-
+/**
+ * CommonProxy
+ *
+ * Действия данного класса выполняються на стороне и клиента и сервера
+ *
+ */
 public class CommonProxy {
 
     public static CreativeTabs mytab = new MyTab(main.MODID);
@@ -52,14 +58,16 @@ public class CommonProxy {
     public void init(FMLInitializationEvent event) {
         //SpawnMobs
         MobSpawnReg.MobSpawnReg();
+
     }
 
     public void postInit(FMLPostInitializationEvent event) {
-        //RPIInformationList
-        RPIInformationList.init();
         //RPIKnowledgeList
         RPIKnowledgeList.RPIKnowledgeListReg();
-
+        //RPIInformationList
+        RPIInformationList.init();
+        //Крфты
+        RPIRecipe.init();
     }
 
     public void registerRenderers()

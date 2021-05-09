@@ -9,6 +9,16 @@ import ru.zxter.rpi.mfintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.render.RenderSavage;
 
+/**
+ * ClientProxy
+ *
+ * Действия выполняються на стороне только клиента
+ *
+ * Регистрация моделей блоков/мобов/предметов
+ * Регистрация рендеров этих самых моделей
+ * ИТД...
+ *
+ */
 public class ClientProxy extends CommonProxy {
 
 
