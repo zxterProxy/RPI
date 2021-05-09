@@ -48,14 +48,14 @@ public class RPIRecipe {
      RPIKnowledgeList.talkingsphereAR = MineFantasyAPI.addAnvilRecipe(artisanry, new ItemStack(ItemReg.talkingsphere), "talkingsphere",
              true, 1, 1, 5, new Object[]{"CCC", 'C', ItemReg.scroll});
 
-       //Рецепт очистки металла
+        //Рецепт очистки металла
      MineFantasyAPI.addBlastFurnaceRecipe(ItemReg.scroll, new ItemStack(ItemReg.scroll));
-
-       //Рецепты для домницы
+        //Сплав
+     MineFantasyAPI.addAlloy(new ItemStack(ItemReg.diary),new Object[]{ItemReg.scroll, Items.iron_ingot, Blocks.gravel,});
+        //Рецепты для домницы
      BloomRecipe.addRecipe(ItemReg.scroll, new ItemStack(ItemReg.diary));
 
-     // MineFantasyAPI.addAlloy(new ItemStack(ItemReg.diary),new Object[]{"C#",('C'),ItemReg.scroll,('#'), Items.iron_ingot,});
-     // MineFantasyAPI.addRatioAlloy(4,new ItemStack(ItemReg.talkingsphere),new Object[]{"CC","CC", ('C'), ItemReg.scroll});
-     //   AlloyRecipes.addAlloy(new ItemStack(ItemReg.talkingsphere),alloys);
+
+
 }
 }
