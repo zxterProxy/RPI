@@ -6,13 +6,14 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 public class WizardArmor extends ItemArmor {
     private String texturePath = main.MODID + ":" + "textures/model/armor/";
 
     public WizardArmor(ArmorMaterial armorMaterial, int renderIndex, int i, String name, String texture) {
         super(armorMaterial, renderIndex, i);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
         GameRegistry.registerItem(this, name);
         this.setUnlocalizedName(name);
         this.setMaxStackSize(1);

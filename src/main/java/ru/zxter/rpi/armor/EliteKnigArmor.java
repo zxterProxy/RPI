@@ -7,6 +7,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 
 public class EliteKnigArmor extends ItemArmor {
@@ -16,7 +17,7 @@ public class EliteKnigArmor extends ItemArmor {
         super(armorMaterial, renderIndex, i);
         GameRegistry.registerItem(this, name);
         this.setUnlocalizedName(name);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
         this.setMaxStackSize(1);
         this.setTextureName();
 

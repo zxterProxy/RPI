@@ -7,14 +7,21 @@ import minefantasy.mf2.api.refine.Alloy;
 import minefantasy.mf2.api.refine.AlloyRecipes;
 import minefantasy.mf2.api.rpg.Skill;
 import minefantasy.mf2.api.rpg.SkillList;
+import minefantasy.mf2.item.ItemComponentMF;
 import minefantasy.mf2.item.list.ComponentListMF;
+import minefantasy.mf2.material.MetalMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import ru.zxter.rpi.mfintegration.RPIKnowledgeList;
+import ru.zxter.rpi.register.IngredientsReg;
 import ru.zxter.rpi.register.ItemReg;
+import thaumcraft.api.ItemApi;
+import thaumcraft.api.ThaumcraftApi;
+import thaumcraft.common.Thaumcraft;
+import thaumcraft.common.items.ItemResource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +62,9 @@ public class RPIRecipe {
         //Рецепты для домницы
      BloomRecipe.addRecipe(ItemReg.scroll, new ItemStack(ItemReg.diary));
 
+    // MineFantasyAPI.addBlastFurnaceRecipe(IngredientsReg.thaumium, ItemApi.getItem("itemResource", 2));
+     MineFantasyAPI.addBlastFurnaceRecipe(IngredientsReg.thaumium,ComponentListMF.bar.createComm("Thaumium"));
 
 
-}
+    }
 }

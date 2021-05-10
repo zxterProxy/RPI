@@ -5,9 +5,11 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import minefantasy.mf2.api.armour.ArmourDesign;
 import minefantasy.mf2.api.armour.CustomArmourEntry;
+import minefantasy.mf2.knowledge.ArtefactListMF;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.MinecraftForgeClient;
 import ru.zxter.rpi.ctabs.BossTab;
+import ru.zxter.rpi.mfintegration.RPIArtefactList;
 import ru.zxter.rpi.mfintegration.RPIInformationList;
 import ru.zxter.rpi.mfintegration.RPIKnowledgeList;
 import ru.zxter.rpi.ctabs.MyTab;
@@ -26,8 +28,7 @@ import ru.zxter.rpi.render.KeuleRender;
  */
 public class CommonProxy {
 
-    public static CreativeTabs mytab = new MyTab(main.MODID);
-    public static CreativeTabs bosstab = new BossTab("Boss");
+
 
     public void preInit(FMLPreInitializationEvent event) {
         //Armor
@@ -60,6 +61,8 @@ public class CommonProxy {
     public void init(FMLInitializationEvent event) {
         //SpawnMobs
         MobSpawnReg.MobSpawnReg();
+        //Tabs
+        TabReg.init();
 
     }
 
@@ -74,6 +77,8 @@ public class CommonProxy {
         RPIRecipe.init();
         //Статисика брони
         ArmorReg.ArmorStatsReg();
+        //Предметы для изучения
+        RPIArtefactList.init();
     }
 
     public void registerRenderers()

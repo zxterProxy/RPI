@@ -3,6 +3,7 @@ package ru.zxter.rpi.ctabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import ru.zxter.rpi.main;
+import ru.zxter.rpi.register.ItemReg;
 import ru.zxter.rpi.register.LoreItemsReg;
 import ru.zxter.rpi.register.WeaponReg;
 
@@ -20,7 +21,7 @@ import ru.zxter.rpi.register.WeaponReg;
 
         @Override
         public Item getTabIconItem() {
-            return (WeaponReg.flamberg);
+            return (ItemReg.talkingsphere);
 
         }
     }

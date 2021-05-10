@@ -5,6 +5,7 @@ import net.minecraft.item.ItemSword;
 import org.lwjgl.opengl.GL11;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 public class BluntedRapier extends ItemSword {
     public BluntedRapier(ToolMaterial material, String name, String texture) {
@@ -12,7 +13,7 @@ public class BluntedRapier extends ItemSword {
         GameRegistry.registerItem(this, name);
         setUnlocalizedName(name);
         this.setTextureName(main.MODID + ":" + texture);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
     }
 
 }

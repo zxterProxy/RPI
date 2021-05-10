@@ -12,6 +12,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class TalkingSphere extends Item {
         GameRegistry.registerItem(this, name);
         this.setUnlocalizedName(name);
         this.setTextureName(main.MODID + ":" + texture);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
 
     }
 

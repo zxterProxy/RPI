@@ -9,6 +9,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 public class CrescentGrass extends ItemFood {
     public CrescentGrass(String name, String texture, int p_i45339_1_, float p_i45339_2_, boolean p_i45339_3_) {
@@ -17,7 +18,7 @@ public class CrescentGrass extends ItemFood {
         this.setUnlocalizedName(name);
         this.setMaxStackSize(16);
         this.setTextureName(main.MODID + ":" + texture);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
         this.setHasSubtypes(true);
         this.setAlwaysEdible();
 

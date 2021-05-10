@@ -4,6 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 
 public class Scroll extends Item {
@@ -11,7 +12,7 @@ public class Scroll extends Item {
         GameRegistry.registerItem(this, name);
         setUnlocalizedName(name);
         setTextureName(main.MODID + ":" + texture);
-        setCreativeTab(CommonProxy.mytab);
+        setCreativeTab(TabReg.mytab);
     }
 
 }

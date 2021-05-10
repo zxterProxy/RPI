@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import ru.zxter.rpi.main;
 import ru.zxter.rpi.proxy.CommonProxy;
+import ru.zxter.rpi.register.TabReg;
 
 public class ClericArmor extends ItemArmor {
     private String texturePath = main.MODID + ":" + "textures/model/armor/";
@@ -15,7 +16,7 @@ public class ClericArmor extends ItemArmor {
         super(armorMaterial, renderIndex, i);
         GameRegistry.registerItem(this, name);
         this.setUnlocalizedName(name);
-        this.setCreativeTab(CommonProxy.mytab);
+        this.setCreativeTab(TabReg.mytab);
         this.setMaxStackSize(1);
         this.setTextureName();
 
