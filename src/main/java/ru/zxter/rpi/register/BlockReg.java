@@ -14,15 +14,15 @@ public class BlockReg {
     public static Block monolith;
     public static Block fog;
 
-    public static void BlockReg (){
-        fog = new FogBlock("fog","fog");
-        cobblestoneclay = new CobblestoneClay("cobblestoneclay","cobblestoneclay");
+    public static void BlockReg() {
+        fog = new FogBlock("fog", "fog");
+        cobblestoneclay = new CobblestoneClay("cobblestoneclay", "cobblestoneclay");
         monolith = new Monolith("monolith", "monolith");
-        roofk = new Roof("roofk","roofk",3);
-        roof1 = new Roof("roof1","roof1",16);
-        roof2 = new Roof("roof2","roof2",16);
-        roof3 = new Roof("roof3","roof3",16);
-        strengthening = new Strengthening("strengthening","strengthening",4);
+        roofk = new Roof("roofk", "roofk", 3);
+        roof1 = new Roof("roof1", "roof1", 16);
+        roof2 = new Roof("roof2", "roof2", 16);
+        roof3 = new Roof("roof3", "roof3", 16);
+        strengthening = new Strengthening("strengthening", "strengthening", 4);
 
     }
 }

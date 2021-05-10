@@ -5,7 +5,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import ru.zxter.rpi.main;
-import ru.zxter.rpi.proxy.CommonProxy;
 import ru.zxter.rpi.register.TabReg;
 
 public class WandererArmor extends ItemArmor {

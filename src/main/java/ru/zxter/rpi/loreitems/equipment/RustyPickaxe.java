@@ -3,7 +3,6 @@ package ru.zxter.rpi.loreitems.equipment;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemPickaxe;
 import ru.zxter.rpi.main;
-import ru.zxter.rpi.proxy.CommonProxy;
 import ru.zxter.rpi.register.TabReg;
 
 public class RustyPickaxe extends ItemPickaxe {

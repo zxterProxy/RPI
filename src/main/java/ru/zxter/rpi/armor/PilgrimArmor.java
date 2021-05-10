@@ -5,11 +5,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import ru.zxter.rpi.main;
-import ru.zxter.rpi.proxy.CommonProxy;
 import ru.zxter.rpi.register.TabReg;
 
 
-public class PilgrimArmor  extends ItemArmor {
+public class PilgrimArmor extends ItemArmor {
     private String texturePath = main.MODID + ":" + "textures/model/armor/";
 
     public PilgrimArmor (ArmorMaterial armorMaterial, int renderIndex, int i, String name, String texture) {

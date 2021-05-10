@@ -17,23 +17,23 @@ import java.util.List;
 
 public class Roof extends Block {
 
-private int count;
-@SideOnly(Side.CLIENT)
-private IIcon[] icon;
+    private int count;
+    @SideOnly(Side.CLIENT)
+    private IIcon[] icon;
 
-        public Roof(String name, String texture, int count) {
-            super(Material.rock);
-            GameRegistry.registerBlock(this, ItemBlockMetadata.class, name);
-            this.setBlockTextureName(main.MODID + ":roof/" + texture);
-            this.setHardness(7F);
-            this.count = count;
-            this.setResistance(10F);
-            this.setBlockName(name);
-            this.setCreativeTab(CreativeTabs.tabBlock);
-            this.setHarvestLevel("pickaxe", 1);
+    public Roof(String name, String texture, int count) {
+        super(Material.rock);
+        GameRegistry.registerBlock(this, ItemBlockMetadata.class, name);
+        this.setBlockTextureName(main.MODID + ":roof/" + texture);
+        this.setHardness(7F);
+        this.count = count;
+        this.setResistance(10F);
+        this.setBlockName(name);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setHarvestLevel("pickaxe", 1);
 
 
-        }
+    }
 
     @Override
     public int damageDropped(int meta) {
@@ -42,22 +42,23 @@ private IIcon[] icon;
 
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs tab, List subItems) {
-        for (int n = 0; n < this.count; ++ n) {
+        for (int n = 0; n < this.count; ++n) {
             subItems.add(new ItemStack(this, 1, n));
         }
     }
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int meta){
-            return  this.icon[meta];
 
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int side, int meta) {
+        return this.icon[meta];
+
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister icon) {
+        this.icon = new IIcon[this.count];
+        for (int i = 0; i < this.count; i++) {
+            this.icon[i] = icon.registerIcon(this.getTextureName() + "_" + i);
         }
-
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister icon){
-            this.icon = new IIcon[this.count];
-            for (int i = 0; i < this.count; i++){
-                this.icon[i] = icon.registerIcon(this.getTextureName() + "_" + i);
-            }
 
     }
 }

@@ -6,12 +6,9 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import minefantasy.mf2.api.armour.ArmourDesign;
-import minefantasy.mf2.api.armour.CustomArmourEntry;
 import net.minecraftforge.common.MinecraftForge;
 import ru.zxter.rpi.events.RPIEventHandler;
 import ru.zxter.rpi.proxy.CommonProxy;
-import ru.zxter.rpi.register.ArmorReg;
 
 
 @Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION, dependencies = "required-after:minefantasy2@")
@@ -23,16 +20,15 @@ public class main {
     @SidedProxy(clientSide = "ru.zxter.rpi.proxy.ClientProxy", serverSide = "ru.zxter.rpi.proxy.CommonProxy")
     public static CommonProxy proxy;
 
-    /** ПРЕИНИЦАЛИЗАЦИЯ
-     *
+    /**
+     * ПРЕИНИЦАЛИЗАЦИЯ
+     * <p>
      * ( Обычно тут регистрируют )
-     *
+     * <p>
      * Регистрация блоков и предметов.
      * Регистрация Tile Entity
      * Регистрация сущностей
      * Присвоение имен в Ore Dictionary
-     *
-     *
      **/
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -41,15 +37,15 @@ public class main {
         proxy.registerRenderers();
 
     }
-    /** ИЦАЛИЗАЦИЯ
-     *
+
+    /**
+     * ИЦАЛИЗАЦИЯ
+     * <p>
      * ( Обычно тут регистрируют )
-     *
+     * <p>
      * Регистрация генераторов структур
      * Регистрация рецептов
      * Регистрация обработчиков действий
-     *
-     *
      **/
     @EventHandler
     public void init(FMLInitializationEvent event) {
@@ -57,12 +53,13 @@ public class main {
         proxy.init(event);
 
     }
-    /** ПОСТИЦАЛИЗАЦИЯ
-     *
+
+    /**
+     * ПОСТИЦАЛИЗАЦИЯ
+     * <p>
      * ( Обычно тут регистрируют )
-     *
+     * <p>
      * Всё, что связанно с другимим модами
-     *
      **/
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
@@ -77,11 +74,10 @@ public class main {
 //ПОЯСНЕНИЯ ПО ПРОКСИ *
 
 /**
- *  Minecraft состоит из нескольких частей:
- *
- *  Физический клиент — это программа, которую вы запускаете с помощью лаунчера.
- *  Физический сервер, который часто называется выделенным сервером — программа, которая запускается с помощью файлов типа minecraft_server.jar.
- *  Логический клиент отвечает за отображение моделей и текстур, за прием данных от мышки и клавиатуры, за отображение GUI.
- *  Логический сервер отвечает за всю игровую логику: спавн мобов, погоду, обновление инвентарей, AI и все другие механики игры.
- *
- * */
+ * Minecraft состоит из нескольких частей:
+ * <p>
+ * Физический клиент — это программа, которую вы запускаете с помощью лаунчера.
+ * Физический сервер, который часто называется выделенным сервером — программа, которая запускается с помощью файлов типа minecraft_server.jar.
+ * Логический клиент отвечает за отображение моделей и текстур, за прием данных от мышки и клавиатуры, за отображение GUI.
+ * Логический сервер отвечает за всю игровую логику: спавн мобов, погоду, обновление инвентарей, AI и все другие механики игры.
+ */

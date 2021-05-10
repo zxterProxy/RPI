@@ -2,7 +2,6 @@ package ru.zxter.rpi.register;
 
 import minefantasy.mf2.api.armour.ArmourDesign;
 import minefantasy.mf2.api.armour.CustomArmourEntry;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
@@ -27,12 +26,13 @@ public class ArmorReg {
     public static Item pilgrimhelmet, pilgrimplate, pilgrimpants, pilgrimboots;
 
 
-    public static final ItemArmor.ArmorMaterial eliteСhainMail = EnumHelper.addArmorMaterial("eliteСhainMail", 45, new int[] {3, 5, 4, 2}, 30);
-    public static final ItemArmor.ArmorMaterial mercenarymaterial = EnumHelper.addArmorMaterial("mercenarymaterial", 43, new int[] {2, 5, 3, 2}, 30);
-    public static final ItemArmor.ArmorMaterial materialthetraveler = EnumHelper.addArmorMaterial("materialthetraveler", 39, new int[] {1, 4, 3, 2}, 30);
-    public static final ItemArmor.ArmorMaterial thematerialwizard = EnumHelper.addArmorMaterial("thematerialwizard", 37, new int[] {1, 3, 3, 1}, 30);
-    public static final ItemArmor.ArmorMaterial thematerialofthepyromancer  = EnumHelper.addArmorMaterial("thematerialofthepyromancer", 39, new int[] {1, 3, 2, 2}, 30);
-    public static final ItemArmor.ArmorMaterial thematerialofthecleric = EnumHelper.addArmorMaterial("thematerialofthecleric", 41, new int[] {5, 2, 2, 2}, 30);
+    public static final ItemArmor.ArmorMaterial eliteСhainMail = EnumHelper.addArmorMaterial("eliteСhainMail", 45, new int[]{3, 5, 4, 2}, 30);
+    public static final ItemArmor.ArmorMaterial mercenarymaterial = EnumHelper.addArmorMaterial("mercenarymaterial", 43, new int[]{2, 5, 3, 2}, 30);
+    public static final ItemArmor.ArmorMaterial materialthetraveler = EnumHelper.addArmorMaterial("materialthetraveler", 39, new int[]{1, 4, 3, 2}, 30);
+    public static final ItemArmor.ArmorMaterial thematerialwizard = EnumHelper.addArmorMaterial("thematerialwizard", 37, new int[]{1, 3, 3, 1}, 30);
+    public static final ItemArmor.ArmorMaterial thematerialofthepyromancer = EnumHelper.addArmorMaterial("thematerialofthepyromancer", 39, new int[]{1, 3, 2, 2}, 30);
+    public static final ItemArmor.ArmorMaterial thematerialofthecleric = EnumHelper.addArmorMaterial("thematerialofthecleric", 41, new int[]{5, 2, 2, 2}, 30);
+
     public static void ArmorReg() {
         //KnightArmor
         eliteknighthelmet = new EliteKnigArmor(eliteСhainMail, 0, 0, "eliteknighthelmet", "eliteknighthelmet").setTextureName(MODID + ":" + "eliteknighthelmet");
@@ -76,6 +76,7 @@ public class ArmorReg {
         pilgrimpants = new PilgrimArmor(thematerialofthecleric, 0, 2, "pilgrimskirt", "pilgrimskirt").setTextureName(MODID + ":" + "pilgrimskirt");
         pilgrimboots = new PilgrimArmor(thematerialofthecleric, 0, 3, "pilgrimshackles", "pilgrimshackles").setTextureName(MODID + ":" + "pilgrimshackles");
     }
+
     public static void ArmorStatsReg() {
         CustomArmourEntry.registerItem(ArmorReg.clerichelmet, ArmourDesign.CHAINMAIL, 100.5F, "medium");
     }

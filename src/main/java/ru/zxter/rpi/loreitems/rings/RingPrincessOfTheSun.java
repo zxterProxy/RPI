@@ -13,7 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import ru.zxter.rpi.main;
-import ru.zxter.rpi.proxy.CommonProxy;
 import ru.zxter.rpi.register.TabReg;
 
 import java.util.List;
@@ -74,9 +73,9 @@ public class RingPrincessOfTheSun extends Item implements IBauble {
 
 
     @Override
-        public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
-            /**последний два значения(float/F) это: 1. Громкость, 2. Тональность звука. */
-            player.playSound(main.MODID +":" + "ambient.test", 3.5F, 1.5F);
-            return stack;
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
+        /**последний два значения(float/F) это: 1. Громкость, 2. Тональность звука. */
+        player.playSound(main.MODID + ":" + "ambient.test", 3.5F, 1.5F);
+        return stack;
     }
 }

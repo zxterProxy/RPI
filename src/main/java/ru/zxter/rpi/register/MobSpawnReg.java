@@ -14,8 +14,8 @@ public class MobSpawnReg {
     public static void MobSpawnReg() {
         //Спавн Дикаря
         List<BiomeGenBase> biomes = new ArrayList<BiomeGenBase>();
-        for(BiomeGenBase biome : BiomeGenBase.getBiomeGenArray()){
-            if(biome != null){
+        for (BiomeGenBase biome : BiomeGenBase.getBiomeGenArray()) {
+            if (biome != null) {
                 biomes.add(biome);
             }
         }

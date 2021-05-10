@@ -13,11 +13,11 @@ public class IngredientsReg {
     public static Item thaumium;
 
 
-    public static void IngredientsReg(){
+    public static void IngredientsReg() {
 
         resin = new Resin("resin", "resin");
         wismar = new Wismar("wismar", "wismar");
         ironwheel = new IronWheel("ironwheel", "iron_wheel");
-        thaumium = new Thaumium("thaumium_prep","thaumium_prep");
+        thaumium = new Thaumium("thaumium_prep", "thaumium_prep");
     }
 }

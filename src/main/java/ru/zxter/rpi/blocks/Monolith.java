@@ -10,7 +10,7 @@ import ru.zxter.rpi.main;
  * Created by zxter on 03.01.2021.
  */
 public class Monolith extends Block {
-    public Monolith (String name, String texture){
+    public Monolith(String name, String texture) {
         super(Material.rock);
 
         GameRegistry.registerBlock(this, name);

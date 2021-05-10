@@ -15,7 +15,7 @@ import org.lwjgl.opengl.GL11;
 public class KeuleRender implements IItemRenderer {
     private final float scale;
 
-    public KeuleRender (float scale) {
+    public KeuleRender(float scale) {
         this.scale = scale;
     }
 
@@ -31,7 +31,7 @@ public class KeuleRender implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        switch (type){
+        switch (type) {
             case EQUIPPED_FIRST_PERSON:
                 renderEquippedItem(item, (EntityLivingBase) data[1], false);
                 break;
@@ -47,13 +47,13 @@ public class KeuleRender implements IItemRenderer {
         float f = scale;
         if (firstPerson) {
             f *= 1.75F;                                              //отображение от 1 лица
-            GL11.glRotatef(30,-9,-20,-10);
+            GL11.glRotatef(30, -9, -20, -10);
         } else {
             f *= (entity instanceof EntityPlayer ? 1.0F : 1.0F);               //отображение от 3 лица
             //x=высота
             //y=глубина
             //z=влево в право
-            GL11.glTranslatef(-0.8F , -0.23F , 0.01F ); //первая цифра - высота положения предмета
+            GL11.glTranslatef(-0.8F, -0.23F, 0.01F); //первая цифра - высота положения предмета
 
         }
         GL11.glScalef(f, f, f);

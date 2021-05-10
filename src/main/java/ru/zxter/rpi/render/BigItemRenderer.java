@@ -31,7 +31,7 @@ public class BigItemRenderer implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        switch (type){
+        switch (type) {
             case EQUIPPED_FIRST_PERSON:
                 renderEquippedItem(item, (EntityLivingBase) data[1], true);
                 break;
@@ -47,13 +47,13 @@ public class BigItemRenderer implements IItemRenderer {
         float f = scale;
         if (firstPerson) {
             f *= 1.75F;                                              //отображение от 1 лица
-            GL11.glRotatef(30,1,0,0);
+            GL11.glRotatef(30, 1, 0, 0);
         } else {
             f *= (entity instanceof EntityPlayer ? 1.0F : 1.0F);               //отображение от 3 лица
             //x=высота
             //y=назад вперед
             //z=влево в право
-            GL11.glTranslatef(-0.8F , -0F , 0.1F ); //первая цифра - высота положения предмета
+            GL11.glTranslatef(-0.8F, -0F, 0.1F); //первая цифра - высота положения предмета
 
         }
         GL11.glScalef(f, f, f);

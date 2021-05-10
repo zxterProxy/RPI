@@ -13,12 +13,12 @@ public class Fog extends TileEntity {
     int state;
     int tick = 0;
 
-   public Fog(){
+    public Fog() {
         setState(0);
     }
 
-    public boolean isInCollisionAction(){
-        return state==1;
+    public boolean isInCollisionAction() {
+        return state == 1;
     }
 
     public void setState(int state) {
@@ -27,11 +27,11 @@ public class Fog extends TileEntity {
 
     @Override
     public void updateEntity() {
-        AxisAlignedBB block = AxisAlignedBB.getBoundingBox(this.xCoord,this.yCoord, this.zCoord, this.xCoord+1,this.yCoord+1, this.zCoord+1);
+        AxisAlignedBB block = AxisAlignedBB.getBoundingBox(this.xCoord, this.yCoord, this.zCoord, this.xCoord + 1, this.yCoord + 1, this.zCoord + 1);
         super.updateEntity();
         tick++;
-        if(tick>40)tick=0;
-        if(!this.worldObj.isRemote) {
+        if (tick > 40) tick = 0;
+        if (!this.worldObj.isRemote) {
             if (isInCollisionAction()) {
                 Entity l[] = (Entity[]) this.worldObj.getLoadedEntityList().toArray(new Entity[0]);
                 boolean find = false;
@@ -49,7 +49,7 @@ public class Fog extends TileEntity {
                     setState(0);
                 }
             } else {
-                if(tick ==0) {
+                if (tick == 0) {
                     if (state == 1)
                         System.out.println("Collided");
                     else if (state == 0)

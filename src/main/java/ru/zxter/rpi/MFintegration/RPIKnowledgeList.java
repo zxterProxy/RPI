@@ -1,28 +1,16 @@
 package ru.zxter.rpi.mfintegration;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import minefantasy.mf2.api.MineFantasyAPI;
 import minefantasy.mf2.api.crafting.anvil.IAnvilRecipe;
 import minefantasy.mf2.api.crafting.carpenter.ICarpenterRecipe;
 import minefantasy.mf2.api.knowledge.InformationBase;
 import minefantasy.mf2.api.knowledge.InformationPage;
-import minefantasy.mf2.api.refine.Alloy;
-import minefantasy.mf2.api.refine.AlloyRecipes;
-import minefantasy.mf2.api.refine.BlastFurnaceRecipes;
 import minefantasy.mf2.api.rpg.SkillList;
-import minefantasy.mf2.item.list.ComponentListMF;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import ru.zxter.rpi.register.IngredientsReg;
 import ru.zxter.rpi.register.ItemReg;
-import thaumcraft.api.ItemApi;
 
 import static minefantasy.mf2.knowledge.KnowledgeListMF.artisanry;
-import static minefantasy.mf2.knowledge.KnowledgeListMF.smeltBlackSteel;
 import static minefantasy.mf2.knowledge.KnowledgeListMF.smeltSteel;
-import static net.minecraft.block.material.Material.rock;
 
 /**
  * Тут идет регистрация влкадок в "книге исследований"

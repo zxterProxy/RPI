@@ -16,8 +16,8 @@ public class WeaponReg {
         bluntedrapier = new BluntedRapier(rust, "bluntedrapier", "bluntedrapier");
         therustyaxe = new TheRustyAxe(rust, "therustyaxe", "therustyaxe");
         brokenshestoper = new BrokenShestoper(rust, "brokenshestoper", "brokenshestoper");
-        mizerickord = new Mizerickord(rust,"mizerickord","mizerickord");
-        flamberg = new Flamberg (rust, "flamberg", "flamberg");
+        mizerickord = new Mizerickord(rust, "mizerickord", "mizerickord");
+        flamberg = new Flamberg(rust, "flamberg", "flamberg");
         keule = new Keule(rust, "keule", "keule_0");
         spikekeule = new SpikeKeule(rust, "spikekeule", "keule_1");
     }

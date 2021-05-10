@@ -16,9 +16,7 @@ import net.minecraft.world.World;
 import ru.zxter.rpi.entitys.Fog;
 import ru.zxter.rpi.main;
 
-
 import java.util.Random;
-
 
 
 /**
@@ -43,17 +41,17 @@ public class FogBlock extends BlockContainer {
 
         GameRegistry.registerTileEntity(Fog.class, "tileBlockCauldron");
     }
+
     @SideOnly(Side.CLIENT)
-    public void randomDisplayTick(World world, int x, int y, int z, Random random)
-    {
-        if (random.nextInt(100) == 0)
-        {
-            world.playSound((double)x + 0.5D, (double)y + 0.5D, (double)z + 0.5D, main.MODID +":" + "block.fog", 0.5F, random.nextFloat() * 0.4F + 0.8F, false);
+    public void randomDisplayTick(World world, int x, int y, int z, Random random) {
+        if (random.nextInt(100) == 0) {
+            world.playSound((double) x + 0.5D, (double) y + 0.5D, (double) z + 0.5D, main.MODID + ":" + "block.fog", 0.5F, random.nextFloat() * 0.4F + 0.8F, false);
 
         }
 
 
     }
+
     @Override
     public TileEntity createNewTileEntity(World world, int par2) {
         return new Fog();
@@ -80,8 +78,8 @@ public class FogBlock extends BlockContainer {
 
     @Override
     public void onEntityCollidedWithBlock(World w, int x, int y, int z, Entity en) {
-        if(w.getTileEntity(x,y,z) instanceof Fog){
-            ((Fog)w.getTileEntity(x,y,z)).setState(1);
+        if (w.getTileEntity(x, y, z) instanceof Fog) {
+            ((Fog) w.getTileEntity(x, y, z)).setState(1);
         }
         super.onEntityCollidedWithBlock(w, x, y, z, en);
         if (en instanceof EntityPlayer) {

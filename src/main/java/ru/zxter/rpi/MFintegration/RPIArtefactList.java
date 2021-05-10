@@ -1,12 +1,9 @@
 package ru.zxter.rpi.mfintegration;
 
-import jdk.nashorn.internal.ir.Block;
 import minefantasy.mf2.api.knowledge.InformationBase;
 import minefantasy.mf2.api.knowledge.ResearchArtefacts;
 import minefantasy.mf2.item.ItemArtefact;
 import minefantasy.mf2.item.list.ComponentListMF;
-
-import net.minecraft.init.Blocks;
 import ru.zxter.rpi.register.IngredientsReg;
 
 /**
@@ -20,6 +17,7 @@ public class RPIArtefactList {
         //       addProvisioning();
         //       addEngineering();
     }
+
     private static void addArtisanry() {
         add(RPIKnowledgeList.smeltThaumium, IngredientsReg.thaumium);
     }

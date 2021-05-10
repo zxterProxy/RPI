@@ -9,8 +9,7 @@ import net.minecraft.entity.EntityList;
 
 public class MobReg {
 
-    public static void MobReg(Class entityClass, String name, int primaryColor, int secondaryColor)
-    {
+    public static void MobReg(Class entityClass, String name, int primaryColor, int secondaryColor) {
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
         long seed = name.hashCode();
 

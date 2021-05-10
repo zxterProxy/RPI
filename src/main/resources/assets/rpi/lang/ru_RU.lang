@@ -215,6 +215,6 @@ infoPage.relics=Реликвии
 rpi.knowledge.talkingsphere=Боже зачем я это нашел...
 
 
-knowledge.smeltThaumium=Очиста таум-металла
+knowledge.smeltThaumium=Очистка таум-металла
 knowledge.smeltThaumium.desc=Уровень 3, алхимический материал
-knowledge.smeltThaumium.1=Это Ваш первый материал на тернистом пути постижения премудростей кузнечного ремесла.^Да, Вы делаете мусор, но зато он Ваш!
+rpi.knowledge.smeltThaumium.1=Это Ваш первый материал на тернистом пути постижения премудростей кузнечного ремесла.^Да, Вы делаете мусор, но зато он Ваш!

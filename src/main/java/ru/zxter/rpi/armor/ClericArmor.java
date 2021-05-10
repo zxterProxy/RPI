@@ -6,7 +6,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import ru.zxter.rpi.main;
-import ru.zxter.rpi.proxy.CommonProxy;
 import ru.zxter.rpi.register.TabReg;
 
 public class ClericArmor extends ItemArmor {
@@ -36,26 +35,25 @@ public class ClericArmor extends ItemArmor {
         return this.texturePath;
     }
 
-    public boolean hasColor(ItemStack par1ItemStack)
-    {
+    public boolean hasColor(ItemStack par1ItemStack) {
         return true;
     }
 
     public int getColor(ItemStack par1ItemStack) {
         NBTTagCompound nbttagcompound = par1ItemStack.getTagCompound();
-        if(nbttagcompound == null) {
+        if (nbttagcompound == null) {
             return 16777215;
         } else {
             NBTTagCompound nbttagcompound1 = nbttagcompound.getCompoundTag("display");
-            return nbttagcompound1.hasKey("color")?nbttagcompound1.getInteger("color"):(nbttagcompound1 == null?6961280:6961280);
+            return nbttagcompound1.hasKey("color") ? nbttagcompound1.getInteger("color") : (nbttagcompound1 == null ? 6961280 : 6961280);
         }
     }
 
     public void removeColor(ItemStack par1ItemStack) {
         NBTTagCompound nbttagcompound = par1ItemStack.getTagCompound();
-        if(nbttagcompound != null) {
+        if (nbttagcompound != null) {
             NBTTagCompound nbttagcompound1 = nbttagcompound.getCompoundTag("display");
-            if(nbttagcompound1.hasKey("color")) {
+            if (nbttagcompound1.hasKey("color")) {
                 nbttagcompound1.removeTag("color");
             }
         }
@@ -64,13 +62,13 @@ public class ClericArmor extends ItemArmor {
 
     public void func_82813_b(ItemStack par1ItemStack, int par2) {
         NBTTagCompound nbttagcompound = par1ItemStack.getTagCompound();
-        if(nbttagcompound == null) {
+        if (nbttagcompound == null) {
             nbttagcompound = new NBTTagCompound();
             par1ItemStack.setTagCompound(nbttagcompound);
         }
 
         NBTTagCompound nbttagcompound1 = nbttagcompound.getCompoundTag("display");
-        if(!nbttagcompound.hasKey("display")) {
+        if (!nbttagcompound.hasKey("display")) {
             nbttagcompound.setTag("display", nbttagcompound1);
         }
 

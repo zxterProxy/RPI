@@ -2,7 +2,7 @@ package ru.zxter.rpi.register;
 
 import net.minecraft.item.Item;
 import ru.zxter.rpi.loreitems.equipment.*;
-import ru.zxter.rpi.loreitems.rings.*;
+import ru.zxter.rpi.loreitems.rings.RingPrincessOfTheSun;
 
 public class LoreItemsReg {
 
@@ -20,7 +20,8 @@ public class LoreItemsReg {
     public static Item ifritsskull;
     public static Item theflameofthepyromancer;
     public static Item ringprincessofthesun;
-    public static void LoreItemsReg(){
+
+    public static void LoreItemsReg() {
 
         //ringwithgreenstone = new RingWithGreenStone("ringwithgreenstone", "ringwithgreenstone");
         //ringwithredstone = new RingWithRedStone("ringwithredstone", "ringwithredstone");
@@ -32,6 +33,6 @@ public class LoreItemsReg {
         thebellofthecleric = new TheBellOfTheCleric("thebellofthecleric", "thebellofthecleric");
         distortedholyscripture = new DistortedHolyScripture("distortedholyscripture", "distortedholyscripture");
         ifritsskull = new IfritsSkull("ifritsskull", "ifritsskull");
-        ringprincessofthesun = new RingPrincessOfTheSun("ringprincessofthesun","ringprincessofthesun");
+        ringprincessofthesun = new RingPrincessOfTheSun("ringprincessofthesun", "ringprincessofthesun");
     }
 }

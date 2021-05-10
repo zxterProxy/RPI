@@ -11,13 +11,12 @@ import ru.zxter.rpi.render.RenderSavage;
 
 /**
  * ClientProxy
- *
+ * <p>
  * Действия выполняються на стороне только клиента
- *
+ * <p>
  * Регистрация моделей блоков/мобов/предметов
  * Регистрация рендеров этих самых моделей
  * ИТД...
- *
  */
 public class ClientProxy extends CommonProxy {
 
@@ -40,8 +39,7 @@ public class ClientProxy extends CommonProxy {
     }
 
     @Override
-    public void registerRenderers()
-    {
+    public void registerRenderers() {
         RenderingRegistry.registerEntityRenderingHandler(Savage.class, new RenderSavage(new ModelBiped(), 0.5F));
     }
 }
