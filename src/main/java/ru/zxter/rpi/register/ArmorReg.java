@@ -77,7 +77,7 @@ public class ArmorReg {
         pilgrimboots = new PilgrimArmor(thematerialofthecleric, 0, 3, "pilgrimshackles", "pilgrimshackles").setTextureName(MODID + ":" + "pilgrimshackles");
     }
 
-    public static void ArmorStatsReg() {
-        CustomArmourEntry.registerItem(ArmorReg.clerichelmet, ArmourDesign.CHAINMAIL, 100.5F, "medium");
-    }
+   // public static void ArmorStatsReg() {
+   //     CustomArmourEntry.registerItem(ArmorReg.clerichelmet, ArmourDesign.CHAINMAIL, 100.5F, "medium");
+   // }
 }

@@ -67,7 +67,7 @@ public class CommonProxy {
         //MF+RPI Крафты
         RPIRecipe.init();
         //Статисика брони
-        ArmorReg.ArmorStatsReg();
+        //ArmorReg.ArmorStatsReg();
         //Предметы для изучения
         RPIArtefactList.init();
     }

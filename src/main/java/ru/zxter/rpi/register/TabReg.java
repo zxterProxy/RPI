@@ -12,7 +12,7 @@ import ru.zxter.rpi.main;
 public class TabReg {
 
     public static CreativeTabs mytab = new MyTab(main.MODID);
-    public static CreativeTabs bosstab = new BossTab("RPIBoss");
+    // public static CreativeTabs bosstab = new BossTab("RPIBoss");
     public static CreativeTabs rpiingredients = new RPIingredients("RPIIngredients");
 
     public static void init() {
