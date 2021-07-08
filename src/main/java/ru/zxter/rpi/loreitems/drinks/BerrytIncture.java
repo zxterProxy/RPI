@@ -19,7 +19,7 @@ public class BerrytIncture extends Item{
     public BerrytIncture(String name, String texture) {
     setUnlocalizedName(name);
     GameRegistry.registerItem(this, name);
-    this.setCreativeTab(TabReg.mytab);
+        this.setCreativeTab(TabReg.foodtab);
     this.setTextureName(main.MODID + ":drinks/" + texture);
     this.setMaxDamage(1);
     this.setMaxStackSize(1);

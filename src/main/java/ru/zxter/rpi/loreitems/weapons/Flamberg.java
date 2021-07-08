@@ -14,7 +14,7 @@ public class Flamberg extends ItemSword {
         GameRegistry.registerItem(this, name);
         this.setUnlocalizedName(name);
         this.setTextureName(main.MODID + ":" + texture);
-        //this.setCreativeTab(TabReg.bosstab);
+        this.setCreativeTab(TabReg.bosstab);
         this.setMaxDamage(513);
     }
 }

@@ -19,9 +19,9 @@ public class Beer extends Item {
     public Beer(String name, String texture) {
         setUnlocalizedName(name);
         GameRegistry.registerItem(this, name);
-        this.setCreativeTab(TabReg.mytab);
+        this.setCreativeTab(TabReg.foodtab);
         this.setTextureName(main.MODID + ":drinks/" + texture);
-        this.setMaxDamage(1);
+        this.setMaxDamage(4);
         this.setMaxStackSize(1);
 
     }

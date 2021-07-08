@@ -1,18 +1,11 @@
 package ru.zxter.rpi.register;
 
 import net.minecraft.item.Item;
-import ru.zxter.rpi.loreitems.items.Diaty;
-import ru.zxter.rpi.loreitems.items.Letter;
-import ru.zxter.rpi.loreitems.items.Scroll;
-import ru.zxter.rpi.loreitems.items.Sealedenvelope;
+import ru.zxter.rpi.loreitems.items.*;
 import ru.zxter.rpi.loreitems.relics.TalkingSphere;
 
 public class ItemReg {
-    public static Item talkingsphere;
-    public static Item scroll;
-    public static Item letter;
-    public static Item sealedenvelope;
-    public static Item diary;
+    public static Item talkingsphere,scroll,letter,sealedenvelope,diary,wooden_mug,wooden_glass,good_bowl;
 
 
     public static void ItemReg() {
@@ -22,7 +15,9 @@ public class ItemReg {
         letter = new Letter("letter", "letter");
         sealedenvelope = new Sealedenvelope("sealedenvelope", "sealedenvelope");
         diary = new Diaty("diary", "diary");
-
+        wooden_mug = new WoodenMug("wooden_mug","wooden_mug");
+        wooden_glass = new WoodenMug("wooden_glass","wooden_glass");
+        good_bowl = new GoodBowl("good_bowl","good_bowl");
     }
 
 

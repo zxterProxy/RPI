@@ -5,7 +5,7 @@ import ru.zxter.rpi.loreitems.drinks.*;
 
 public class DrinksReg {
 
-    public static Item wine,ale,mead,cider,beer,brandy,mulled_wine,berrytincture,wyvern_breath;
+    public static Item wine,ale,mead,cider,beer,brandy,mulled_wine,berrytincture,wyvern_breath,mug_of_beer;
 
 
     public static void DrinksReg() {
@@ -16,8 +16,9 @@ public class DrinksReg {
         cider = new Cider("cider","drink_3");
         beer = new Beer("beer","drink_4");
         brandy = new Brandy("brandy","drink_5");
-        mulled_wine = new Mulledwine("mulled_wine","drink_6");
+        //mulled_wine = new Mulledwine("mulled_wine","drink_6");
         berrytincture = new BerrytIncture("berryt_incture","drink_7");
-        wyvern_breath = new WyvernBreath("wyvern_breath","drink_8");
+        //wyvern_breath = new WyvernBreath("wyvern_breath","drink_8");
+        mug_of_beer = new Beer("mug_of_beer","drink_9").setMaxStackSize(1);
     }
 }
