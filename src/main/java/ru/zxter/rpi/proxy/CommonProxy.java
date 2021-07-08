@@ -44,10 +44,6 @@ public class CommonProxy {
         DrinksReg.DrinksReg();
         //Mobs
         MobReg.MobReg(Savage.class, "savage", 0x00FFFF, 0x00008B);
-        MinecraftForgeClient.registerItemRenderer(WeaponReg.flamberg, new FlambergRender(3));
-        MinecraftForgeClient.registerItemRenderer(WeaponReg.keule, new KeuleRender(2));
-        MinecraftForgeClient.registerItemRenderer(WeaponReg.spikekeule, new KeuleRender(2));
-
 
     }
 

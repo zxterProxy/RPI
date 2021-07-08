@@ -5,8 +5,12 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraftforge.client.MinecraftForgeClient;
 import ru.zxter.rpi.mfintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
+import ru.zxter.rpi.register.WeaponReg;
+import ru.zxter.rpi.render.FlambergRender;
+import ru.zxter.rpi.render.KeuleRender;
 import ru.zxter.rpi.render.RenderSavage;
 
 /**
@@ -41,5 +45,8 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void registerRenderers() {
         RenderingRegistry.registerEntityRenderingHandler(Savage.class, new RenderSavage(new ModelBiped(), 0.5F));
+        MinecraftForgeClient.registerItemRenderer(WeaponReg.flamberg, new FlambergRender(3));
+        MinecraftForgeClient.registerItemRenderer(WeaponReg.keule, new KeuleRender(2));
+        MinecraftForgeClient.registerItemRenderer(WeaponReg.spikekeule, new KeuleRender(2));
     }
 }

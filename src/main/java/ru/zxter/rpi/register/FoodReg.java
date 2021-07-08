@@ -9,7 +9,7 @@ import ru.zxter.rpi.loreitems.food.RPIFood;
 public class FoodReg {
     public static
 
-    Item crescentgrass,burger,black_bread,fresh_bread,delicious_salad,сhowder,hearty_soup,bacon,
+    Item crescentgrass,burger,black_bread,fresh_bread,delicious_salad,chowder,hearty_soup,bacon,
     fried_sausage,divine_steak,delicious_chicken,meat_pie,strange_fried_fish,great_cheese;
 
     public static void FoodReg() {
@@ -19,7 +19,7 @@ public class FoodReg {
         black_bread = new RPIFood("black_bread","black_bread",5, 1F, false);
         fresh_bread = new RPIFood("fresh_bread","fresh_bread",5, 1F, false);
         delicious_salad = new RPIFood("delicious_salad","delicious_salad",5, 1F, false);
-        сhowder = new RPIFood("сhowder","сhowder",5, 1F, true);
+        chowder = new RPIFood("chowder","chowder",5, 1F, true);
         hearty_soup = new RPIFood("hearty_soup","hearty_soup",5, 1F, true);
         bacon = new RPIFood("bacon","bacon",5, 1F, true);
         fried_sausage = new RPIFood("fried_sausage","fried_sausage",5, 1F, true);
