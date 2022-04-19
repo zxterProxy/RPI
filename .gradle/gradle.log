@@ -1,5 +1,8 @@
+WARNING: You are using an unsupported version of ForgeGradle.
+Please consider upgrading to ForgeGradle 4 and helping in the efforts to get old versions working on the modern toolchain.
+See https://gist.github.com/TheCurle/fe7ad3ede188cbdd15c235cc75d52d4a for more info on contributing.
 #################################################
-         ForgeGradle 1.2-SNAPSHOT-fb514d3        
+         ForgeGradle 1.2.2-g2ea0336        
   https://github.com/MinecraftForge/ForgeGradle  
 #################################################
                Powered by MCP unknown               
@@ -12,14 +15,11 @@
 :getVersionJson
 :extractUserDev UP-TO-DATE
 :mergeJars SKIPPED
-:applyBinPatches
+:applyBinPatches SKIPPED
 :downloadMcpTools SKIPPED
 :extractMcpData UP-TO-DATE
 :genSrgs SKIPPED
-:deobfBinJar
-Applying SpecialSource...
-Applying Exceptor...
-Stripping synthetics...
+:deobfBinJar SKIPPED
 :extractNatives UP-TO-DATE
 :getAssetsIndex
 :getAssets
@@ -34,4 +34,4 @@ Stripping synthetics...
 
 BUILD SUCCESSFUL
 
-Total time: 26.814 secs
+Total time: 21.768 secs

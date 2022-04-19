@@ -29,7 +29,10 @@ minecraft {
 dependencies {
     compile files('libs/Baubles-1.7.10-1.0.1.10-dev.jar')
     compile files('libs/MineFantasyII-2.8.14.6-deobf.jar')
-    compile files('Thaumcraft-deobf-1.7.10-4.2.3.5.jar')
+    compile files('libs/Thaumcraft-deobf-1.7.10-4.2.3.5.jar')
+    compile files('libs/Electroblob\'s Wizardry - 1.1.4 - MC 1.7.10-deobf.jar')
+
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
