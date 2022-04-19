@@ -27,6 +27,7 @@ public class ItemTest extends Item {
         this.setUnlocalizedName(name);
         this.setTextureName(main.MODID + ":" + texture);
         this.setCreativeTab(TabReg.mytab);
+        this.setMaxDamage(1);
 
     }
 
@@ -35,14 +36,18 @@ public class ItemTest extends Item {
         return EnumRarity.rare;
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
-    public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
+        if(!world.isRemote) {
 
-        if (world.isRemote) {
-            Spell.get(1).cast(world,player,0, 1.0F, 1.0F, 1.0F, 1.0F);
+            Spell.get("meteor").cast(world,player,0, 1.0F, 300.0F, 1.0F, 10.0F);
         }
-        return itemStack;
+        stack.damageItem(1,player);
+        return stack;
     }
 
-
 }
+
+
+
