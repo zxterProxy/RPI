@@ -3,15 +3,13 @@ package ru.zxter.rpi.proxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.client.MinecraftForgeClient;
 import ru.zxter.rpi.mfintegration.RPIArtefactList;
 import ru.zxter.rpi.mfintegration.RPIInformationList;
 import ru.zxter.rpi.mfintegration.RPIKnowledgeList;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.recipe.RPIRecipe;
 import ru.zxter.rpi.register.*;
-import ru.zxter.rpi.render.FlambergRender;
-import ru.zxter.rpi.render.KeuleRender;
+
 
 /**
  * CommonProxy
@@ -20,6 +18,9 @@ import ru.zxter.rpi.render.KeuleRender;
  */
 public class CommonProxy {
 
+
+    public void registerNewBlockRenders() {
+    }
 
     public void preInit(FMLPreInitializationEvent event) {
         //Armor

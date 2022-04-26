@@ -62,6 +62,7 @@ public class main {
         System.out.println("\u001B[32m" + "[RPI INITIALIZATION]" + "\u001B[0m");
         proxy.init(event);
         instance = this;
+        proxy.registerNewBlockRenders();
     }
 
     /**
