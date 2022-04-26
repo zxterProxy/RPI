@@ -13,6 +13,7 @@ public class BlockReg {
     public static Block strengthening;
     public static Block monolith;
     public static Block fog;
+    public static Block ac;
 
     public static void BlockReg() {
         fog = new FogBlock("fog", "fog");
@@ -23,6 +24,7 @@ public class BlockReg {
         roof2 = new Roof("roof2", "roof2", 16);
         roof3 = new Roof("roof3", "roof3", 16);
         strengthening = new Strengthening("strengthening", "strengthening", 4);
+        ac = new Ac ("AC","1");
 
     }
 }

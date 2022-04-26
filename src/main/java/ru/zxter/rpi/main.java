@@ -1,14 +1,18 @@
 package ru.zxter.rpi;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import ru.zxter.rpi.events.RPIEventHandler;
+import ru.zxter.rpi.events.RPIGUIHandler;
 import ru.zxter.rpi.proxy.CommonProxy;
+import scala.xml.dtd.impl.Base;
 
 
 @Mod(modid = main.MODID, name = main.MODNAME, version = main.VERSION, dependencies = "required-after:minefantasy2@")
@@ -17,8 +21,14 @@ public class main {
     public static final String MODID = "rpi";
     public static final String MODNAME = "Role-playing-items";
     public static final String VERSION = "0.1";
+
+    @Mod.Instance(main.MODID)
+    public static main instance;
+
     @SidedProxy(clientSide = "ru.zxter.rpi.proxy.ClientProxy", serverSide = "ru.zxter.rpi.proxy.CommonProxy")
     public static CommonProxy proxy;
+
+
 
     /**
      * ПРЕИНИЦАЛИЗАЦИЯ
@@ -51,7 +61,7 @@ public class main {
     public void init(FMLInitializationEvent event) {
         System.out.println("\u001B[32m" + "[RPI INITIALIZATION]" + "\u001B[0m");
         proxy.init(event);
-
+        instance = this;
     }
 
     /**
@@ -66,8 +76,11 @@ public class main {
         System.out.println("\u001B[32m" + "[RPI POST-INITIALIZATION]" + "\u001B[0m");
         proxy.postInit(event);
         //события
-        MinecraftForge.EVENT_BUS.register(new RPIEventHandler());
-
+        RPIEventHandler events = new RPIEventHandler();
+        MinecraftForge.EVENT_BUS.register(events);
+        FMLCommonHandler.instance().bus().register(events);
+        //gui
+        NetworkRegistry.INSTANCE.registerGuiHandler(main.instance, new RPIGUIHandler());
     }
 
 }
