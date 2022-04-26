@@ -1,7 +1,10 @@
 package ru.zxter.rpi.register;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import ru.zxter.rpi.blocks.*;
+import ru.zxter.rpi.render.titleentitys.BlockStatueTitleEntity;
 
 public class BlockReg {
 
@@ -14,6 +17,7 @@ public class BlockReg {
     public static Block monolith;
     public static Block fog;
     public static Block ac;
+    public static Block statue;
 
     public static void BlockReg() {
         fog = new FogBlock("fog", "fog");
@@ -25,6 +29,9 @@ public class BlockReg {
         roof3 = new Roof("roof3", "roof3", 16);
         strengthening = new Strengthening("strengthening", "strengthening", 4);
         ac = new Ac ("AC","1");
+        statue = new Statue (Material.rock,"Statue");
+        GameRegistry.registerBlock(statue, "Statue");
+        GameRegistry.registerTileEntity(BlockStatueTitleEntity.class, "BlockStatueTitleEntity");
 
     }
 }
