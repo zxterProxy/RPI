@@ -27,7 +27,7 @@ public class Statue extends BlockContainer {
         setBlockUnbreakable();
         setResistance(600000F);
         setBlockName(name);
-
+        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 2F, 1.0F);
     }
 
 

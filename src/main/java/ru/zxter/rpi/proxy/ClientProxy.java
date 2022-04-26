@@ -7,7 +7,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraftforge.client.MinecraftForgeClient;
-import ru.zxter.rpi.gui.TestGui;
 import ru.zxter.rpi.mfintegration.RPIKnowledgePageRegistry;
 import ru.zxter.rpi.mobs.Savage;
 import ru.zxter.rpi.register.GuiReg;
