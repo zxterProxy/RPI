@@ -5,20 +5,21 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import ru.zxter.rpi.main;
 
+import ru.zxter.rpi.render.models.custom_model;
 import ru.zxter.rpi.render.models.testS;
 
 
 public class RenderStatueTitleEntity  extends TileEntitySpecialRenderer {
 
-    private static final ResourceLocation texture = new ResourceLocation(main.MODID+":" + "textures/test/testS.png");
+    private static final ResourceLocation texture = new ResourceLocation(main.MODID+":" + "textures/test/testGG.png");
 
-    private testS model;
+    private custom_model model;
 
 
 
     public RenderStatueTitleEntity(){
 
-        this.model = new testS();
+        this.model = new custom_model();
 
     }
 
@@ -34,7 +35,6 @@ public class RenderStatueTitleEntity  extends TileEntitySpecialRenderer {
         GL11.glTranslatef((float)x +0.5F, (float)y + 1.5F, (float)z +0.5F);
         GL11.glRotatef(180, 0.0F, 0.0F, 1F);
         this.bindTexture(texture);
-
         GL11.glPushMatrix(); //rendering model
         this.model.renderModel(0.0625F);
         GL11.glPopMatrix();
